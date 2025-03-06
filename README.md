@@ -1,4 +1,4 @@
-# Gulp Front
+# Gulp/TailwindCSS/SASS/Pug Boilerplate
 
 A boilerplate for frontend projects powered by Gulp, PUG/HTML5 bolierplate, Sass, TailwindCSS, PostCSS, BrowserSync, Babel and Docker.
 
@@ -8,17 +8,17 @@ _A lean and powerful, gulp-based boilerplate for better front-end coding with [G
 
 ## Core features
 
-- Modern and fast build tool
-- A convenient @media mixins
-- Use smart and convenient Gulp Tasks
-- Integrate TailwindCSS and SASS
-- Support Babel
-- Integrate BrowserSync
-- Support Docker for building images
-- PUG/HTML support
-- Prettier
-- Mockup API
-- Favicon Includes
+-   Modern and fast build tool
+-   A convenient @media mixins
+-   Use smart and convenient Gulp Tasks
+-   Integrate TailwindCSS and SASS
+-   Support Babel
+-   Integrate BrowserSync
+-   Support Docker for building images
+-   PUG/HTML support
+-   Prettier
+-   Mockup API
+-   Favicon Includes
 
 ## Quickstart
 
@@ -44,9 +44,9 @@ _A lean and powerful, gulp-based boilerplate for better front-end coding with [G
 
 ## Main tasks
 
-- `yarn dev` - launches watchers and server
-- `yarn build` - compile a project
-- Run `sh app.sh` and follow the instructions
+-   `yarn dev` - launches watchers and server
+-   `yarn build` - compile a project
+-   Run `sh app.sh` and follow the instructions
 
 ## Config
 
@@ -54,8 +54,8 @@ In `.env` file
 
 ## Plugins
 
-- Swiper
-- FancyBox
+-   Swiper
+-   FancyBox
 
 ## License
 
