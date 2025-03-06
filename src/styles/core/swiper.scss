@@ -1,0 +1,33 @@
+@use "./variable.scss" as *;
+/* 
+==========================================================================
+Swiper by Nguyen App
+==========================================================================
+*/
+.swiper {
+	
+	.swiper-pagination {
+		position: relative;
+		top: 0 !important;
+	}
+	
+	.prev,
+	.next {
+		background-color: var(--color-main);
+		color: var(--color-white);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.5rem;
+		cursor: pointer;
+	}
+
+	.prev {
+		margin-left: 2rem;
+	}
+
+	.next {
+		margin-right: 2rem;
+	}
+}

@@ -1,7 +1,21 @@
 <!--#include virtual="/_snippets/header.html"-->
-<div class="container mx-auto my-5 px-10">
+<!-- Hero Section-->
+<section class="hero text-white hero-top" data-bg="/images/global/cta.jpeg" data-overlay="rgba(11, 46, 83, .4)"
+	data-position="bottom center" data-size="cover">
+	<div class="container mx-auto my-5 lg:container-xxl">
+		<div class="flex">
+			<div class="w-full lg:w-1/2">
+				<h1>Who We Are</h1>
+				<div class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi corporis
+					quam cupiditate adipisci reiciendis fuga quisquam distinctio id suscipit nobis maiores debitis sequi
+					nesciunt itaque, atque minus ab sunt.</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="container mx-auto my-5 lg:container-xxl">
 	<div class="flex flex-col">
-		<div class="h1 uppercase">Heading Style</div>
+		<div class="h1 uppercase">Heading</div>
 		<h1>This is a heading style h1 </h1>
 		<div class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium iste adipisci rem a
 			quidem aut quae corporis labore sed, neque sunt molestias asperiores excepturi nesciunt fugit alias nam
@@ -128,19 +142,19 @@
 		<div class="h1 uppercase mt-5">Form</div>
 		<label for="">Label</label>
 		<input
-			class="mb-3 rounded-none border border-1 border-gray text-main p-1 focus:rounded-none focus:outline-none focus:border-main"
+			class="mb-3 rounded-none border border-1 border-gray text-main p-1 focus:rounded-none focus:outline-hidden focus:border-main"
 			type="text" placeholder="Text Input">
 		<input
-			class="mb-3 rounded-none border border-1 border-gray text-main p-1 focus:rounded-none focus:outline-none focus:border-main"
+			class="mb-3 rounded-none border border-1 border-gray text-main p-1 focus:rounded-none focus:outline-hidden focus:border-main"
 			type="email" placeholder="Email Input">
 		<input
-			class="mb-3 rounded-none border border-1 border-gray text-main p-1 focus:rounded-none focus:outline-none focus:border-main"
+			class="mb-3 rounded-none border border-1 border-gray text-main p-1 focus:rounded-none focus:outline-hidden focus:border-main"
 			type="password" placeholder="Password Input">
 		<textarea
-			class="mb-3 rounded-none border border-1 border-gray text-main p-1 focus:rounded-none focus:outline-none focus:border-main"
+			class="mb-3 rounded-none border border-1 border-gray text-main p-1 focus:rounded-none focus:outline-hidden focus:border-main"
 			placeholder="Textarea" rows="5"></textarea>
 		<select
-			class="mb-3 rounded-none border border-1 border-gray text-main p-1 focus:rounded-none focus:outline-none focus:border-main">
+			class="mb-3 rounded-none border border-1 border-gray text-main p-1 focus:rounded-none focus:outline-hidden focus:border-main">
 			<option value="">Option 1</option>
 			<option value="">Option 2</option>
 			<option value="">Option 3</option>
@@ -284,6 +298,56 @@
 				</div>
 			</div>
 		</div>
+		<div class="h1 uppercase mt-5">Swiper</div>
+		<div class="w-full">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide bg-main rounded-xl text-white p-4">
+						<div class="text-sm mb-2">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
+						<div class="text-sm">Name Last Name</div>
+						<div class="text-xs">Description</div>
+					</div>
+					<div class="swiper-slide bg-main rounded-xl text-white p-4">
+						<div class="text-sm mb-2">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
+						<div class="btn-group"><a class="btn btn-main-outline hover-white"
+								href="https://www.youtube.com/watch?v=tHnwV5ay8-8" data-fancybox="video-gallery">Read
+								More</a></div>
+					</div>
+					<div class="swiper-slide bg-main rounded-xl text-white p-4">
+						<div class="text-sm mb-2">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
+						<div class="text-sm">Name Last Name</div>
+						<div class="text-xs">Description</div>
+					</div>
+					<div class="swiper-slide bg-main rounded-xl text-white p-4">
+						<div class="text-sm mb-2">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
+						<div class="text-sm">Name Last Name</div>
+						<div class="text-xs">Description</div>
+					</div>
+					<div class="swiper-slide bg-main rounded-xl text-white p-4">
+						<div class="text-sm mb-2">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
+						<div class="text-sm">Name Last Name</div>
+						<div class="text-xs">Description</div>
+					</div>
+					<div class="swiper-slide bg-main rounded-xl text-white p-4">
+						<div class="text-sm mb-2">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
+						<div class="text-sm">Name Last Name</div>
+						<div class="text-xs">Description</div>
+					</div>
+				</div>
+				<div class="nav flex flex-nowrap justify-between items-center w-full mt-5">
+					<div class="prev"><img src="/images/global/prev.png" alt="Prev"></div>
+					<div class="swiper-pagination"></div>
+					<div class="next"><img src="/images/global/next.png" alt="Next"></div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
+<!--#include virtual="/_snippets/cta.html"-->
 <!--#include virtual="/_snippets/footer.html"-->

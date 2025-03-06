@@ -1,0 +1,31 @@
+@use "./variable.scss" as *;
+/* 
+==========================================================================
+Accordion by Nguyen App
+==========================================================================
+*/
+
+.hero {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+
+	@include media(md) {
+		padding-top: 7rem;
+		padding-bottom: 7rem;
+		min-height: 600px;
+	}
+
+	@include media(lg) {
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+		min-height: 680px;
+	}
+
+	&.hero-top {
+		margin-top: -1.25rem;
+	}
+}

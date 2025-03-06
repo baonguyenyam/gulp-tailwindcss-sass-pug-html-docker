@@ -2,6 +2,13 @@ extends _layout/master
 block head
 	- var title = 'Home'
 block content
+	// Hero Section
+	section.hero.text-white.hero-top(data-bg="/images/global/cta.jpeg" data-overlay="rgba(11, 46, 83, .4)" data-position="bottom center" data-size="cover")
+		.container.mx-auto.my-5(class="lg:container-xxl")
+			.flex
+				.w-full(class="lg:w-1/2")
+					h1 Who We Are
+					.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi corporis quam cupiditate adipisci reiciendis fuga quisquam distinctio id suscipit nobis maiores debitis sequi nesciunt itaque, atque minus ab sunt.
 	.container.mx-auto.my-5(class="lg:container-xxl")
 		.flex.flex-col
 			.h1.uppercase Heading
@@ -149,3 +156,51 @@ block content
 					.accordion-panel
 						.text-base Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia facilis accusantium incidunt nisi odit? Perspiciatis temporibus illum dignissimos labore nam eveniet quia. In pariatur ducimus voluptatibus, sint maiores odio perspiciatis.
 
+			.h1.uppercase.mt-5 Swiper
+			.w-full
+				.swiper
+					.swiper-wrapper
+						.swiper-slide.bg-main.rounded-xl.text-white.p-4
+							.text-sm.mb-2 “Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+							.text-sm Name Last Name
+							.text-xs Description
+						.swiper-slide.bg-main.rounded-xl.text-white.p-4
+							.text-sm.mb-2 “Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+							.btn-group
+								a.btn.btn-main-outline.hover-white(href="https://www.youtube.com/watch?v=tHnwV5ay8-8" data-fancybox="video-gallery") Read More
+						.swiper-slide.bg-main.rounded-xl.text-white.p-4
+							.text-sm.mb-2 “Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+							.text-sm Name Last Name
+							.text-xs Description
+						.swiper-slide.bg-main.rounded-xl.text-white.p-4
+							.text-sm.mb-2 “Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+							.text-sm Name Last Name
+							.text-xs Description
+						.swiper-slide.bg-main.rounded-xl.text-white.p-4
+							.text-sm.mb-2 “Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+							.text-sm Name Last Name
+							.text-xs Description
+						.swiper-slide.bg-main.rounded-xl.text-white.p-4
+							.text-sm.mb-2 “Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+							.text-sm Name Last Name
+							.text-xs Description
+					.nav.flex.flex-nowrap.justify-between.items-center.w-full.mt-5
+						.prev
+							img(src="/images/global/prev.png" alt="Prev")
+						.swiper-pagination
+						.next
+							img(src="/images/global/next.png" alt="Next")
+
+	// CTA Section
+	+cta(
+		"/images/global/cta.jpeg",
+		"rgba(11, 46, 83, .4)",
+		"Let's Build Your Bank's Future Together",
+		"Partner with TIB today and unlock new opportunities for growth and success.",
+		[
+			[
+				"Contact Us Now",
+				"#"
+			],
+		]
+	)

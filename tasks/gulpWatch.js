@@ -6,6 +6,8 @@ const pugCompile = require("./pugCompile");
 const htmlCompile = require("./htmlCompile");
 const copyImages = require("./copyImages");
 const babelCompile = require("./babelCompile");
+const htmlReplace = require("./htmlReplace");
+const replaceMeta = require("./replaceMeta");
 const template_config = dotenv.config().parsed;
 
 function gulpWatch() {
@@ -14,7 +16,7 @@ function gulpWatch() {
 	// Watch Tailwind
 	gulp.watch("./src/styles/**/*.css").on('change', gulp.series(browserSync.reload));
 	// Watch Pug
-	template_config.TEMPLATE_COMPILE === 'pug' ? gulp.watch("./src/template/**/*.pug").on('change', gulp.series(pugCompile, sassCompile, browserSync.reload)) : gulp.watch("./src/template_html/**/*.html").on('change', gulp.series(htmlCompile, sassCompile, browserSync.reload));
+	template_config.TEMPLATE_COMPILE === 'pug' ? gulp.watch("./src/template_pug/**/*.pug").on('change', gulp.series(pugCompile, sassCompile, browserSync.reload)) : gulp.watch("./src/template_html/**/*.html").on('change', gulp.series(htmlCompile, htmlReplace, replaceMeta, sassCompile, browserSync.reload));
 	// Watch Images
 	gulp.watch("./src/images/**/*.*").on('change', gulp.series(copyImages, browserSync.reload));
 	// Watch JS

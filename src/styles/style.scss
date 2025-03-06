@@ -12,14 +12,25 @@ Website: https://nguyenpham.pro
 @use "./tailwind.css";
 
 /*
-1./ Base
-2./ Header
-3./ Footer
+/ Base
+/ Typography
+/ Header
+/ Footer
+/ Accordion
+/ Swiper
+/ Typography
+/ Button
+/ Hero
 ==========================================================================
 */
 @use "./core/base.scss";
+@use "./core/typography.scss";
 @use "./core/header.scss";
 @use "./core/footer.scss";
+@use "./core/accordion.scss";
+@use "./core/swiper.scss";
+@use "./core/button.scss";
+@use "./core/hero.scss";
 /* 
 ==========================================================================
 Merge @media screen

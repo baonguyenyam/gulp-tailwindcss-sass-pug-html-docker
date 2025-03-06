@@ -1,0 +1,135 @@
+@use "./variable.scss" as *;
+/* 
+==========================================================================
+Button by Nguyen App
+==========================================================================
+*/
+.btn {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	padding: .75rem 2rem;
+	border: 2px solid var(--color-main);
+	color: var(--color-main);
+	cursor: pointer;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&.disabled {
+		pointer-events: none;
+		opacity: .5;
+		cursor: not-allowed;
+	}
+
+	&.btn-main {
+		background: var(--color-main);
+		color: #fff;
+	}
+
+	&.btn-secondary {
+		background: var(--color-secondary);
+		color: var(--color-main);
+		border-color: var(--color-secondary);
+	}
+
+	&.btn-light {
+		background: var(--color-light);
+		color: var(--color-main);
+		border-color: var(--color-light);
+	}
+
+	&.btn-gray {
+		background: var(--color-gray);
+		color: var(--color-darkgray);
+		border-color: var(--color-gray);
+	}
+
+	&.btn-base {
+		background: #fff;
+		color: var(--color-main);
+		border-color: var(--color-main);
+	}
+
+	&.btn-white {
+		background: #fff;
+		color: var(--color-main);
+		border-color: #fff;
+	}
+
+	&.btn-main-outline {
+		background: var(--color-main);
+		color: #fff;
+		border-color: #fff
+	}
+
+	&.hover-secondary {
+		&:hover {
+			background: var(--color-secondary);
+			color: var(--color-main);
+			border-color: var(--color-secondary);
+		}
+	}
+
+	&.hover-light {
+		&:hover {
+			background: var(--color-light);
+			color: var(--color-main);
+			border-color: var(--color-light);
+		}
+	}
+
+	&.hover-gray {
+		&:hover {
+			background: var(--color-gray);
+			color: var(--color-darkgray);
+			border-color: var(--color-gray);
+		}
+	}
+
+	&.hover-main {
+		&:hover {
+			background: var(--color-main);
+			color: #fff;
+			border-color: var(--color-main);
+		}
+	}
+
+	&.hover-base {
+		&:hover {
+			background: #fff;
+			color: var(--color-main);
+			border-color: var(--color-main);
+		}
+	}
+
+	&.hover-white {
+		&:hover {
+			background: #fff;
+			color: var(--color-main);
+			border-color: #fff;
+		}
+	}
+
+	&.underline {
+		text-decoration: underline;
+	}
+
+	&.rounded {
+		border-radius: 3px;
+	}
+
+	&.rounded-lg {
+		border-radius: 5px;
+	}
+
+	&.rounded-xl {
+		border-radius: 10px;
+	}
+
+	&.rounded-full {
+		border-radius: 9999px;
+	}
+}

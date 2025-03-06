@@ -44,7 +44,7 @@ export default gulp.series(
     basic,
     babelCompile,
     sassCompile,
-    // browserSyncInit,
+    browserSyncInit,
 );
 
 export const build = gulp.series(

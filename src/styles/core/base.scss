@@ -7,22 +7,10 @@ Base by Nguyen App
 html,
 body {
 	font-family: var(--font-family);
-	font-style: normal;
-	font-weight: 400;
 	font-size: var(--text-normal);
-	line-height: 1.5;
 	min-height: 100%;
-	box-sizing: border-box;
 	color: var(--color-text);
 	overflow-x: hidden;
-
-	* {
-		border-width: 0;
-		border-style: solid;
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-	}
 }
 
 body {
@@ -35,4 +23,9 @@ body {
 	>footer {
 		margin-top: auto;
 	}
+
+	ul, ol {
+		list-style-position: inside;
+	}
+
 }

@@ -35,50 +35,7 @@ class WEB_APP {
         if (typeof Swiper == 'undefined') {
             return;
         }
-        new Swiper('.swiper-testimonials', {
-            slidesPerView: "auto",
-            loop: true,
-            spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            keyboard: {
-                enabled: true,
-            },
-            breakpoints: {
-                767: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                991: {
-                    slidesPerView: "auto",
-                    spaceBetween: 30,
-                },
-            }
-        });
-        if (window.innerWidth < 576) {
-            document.querySelector(".swiper-team").classList.add("swiper");
-            document.querySelector(".swiper-wrapper-flex").classList.add("swiper-wrapper");
-            new Swiper('.swiper-team', {
-                slidesPerView: 1,
-                loop: true,
-                spaceBetween: 30,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                    type: "fraction",
-                },
-                keyboard: {
-                    enabled: true,
-                },
-                navigation: {
-                    nextEl: '.next',
-                    prevEl: '.prev',
-                },
-            });
-        }
-        new Swiper('.swiper-careers', {
+        new Swiper('.swiper', {
             slidesPerView: 1,
             loop: true,
             spaceBetween: 30,
@@ -101,10 +58,6 @@ class WEB_APP {
                 },
                 991: {
                     slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-                1680: {
-                    slidesPerView: 4,
                     spaceBetween: 30,
                 },
             }
