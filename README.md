@@ -24,7 +24,7 @@ _A lean and powerful, gulp-based boilerplate for better front-end coding with [G
 
 1.  Clone the project or [download](https://github.com/baonguyenyam/gulp-tailwindcss-sass-pug-html-docker/archive/master.zip) the file
 
-    ```sh
+    ```bash
     git clone https://github.com/baonguyenyam/gulp-tailwindcss-sass-pug-html-docker.git my-project
     ```
 
