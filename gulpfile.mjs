@@ -25,6 +25,7 @@ import copyData from './tasks/copyData.js';
 import htmlReplace from './tasks/htmlReplace.js';
 import createSitemap from './tasks/createSitemap.js';
 import htmlCompress from './tasks/htmlCompress.js';
+import replaceMeta from './tasks/replaceMeta.js';
 
 // Gulp tasks: basic, default, build
 export const basic = gulp.series(
@@ -33,15 +34,17 @@ export const basic = gulp.series(
     copyImages,
     copyJS,
     copyData,
-    template_config.TEMPLATE_COMPILE === 'pug' ? pugCompile : htmlCompile,
-    template_config.TEMPLATE_COMPILE === 'html' ? htmlReplace : (done) => done(),
+    template_config.TEMPLATE_COMPILE === 'pug' ? pugCompile : (done) => {
+        gulp.series([htmlCompile, htmlReplace], replaceMeta)();
+        done();
+    }
 );
 
 export default gulp.series(
     basic,
     babelCompile,
     sassCompile,
-    browserSyncInit,
+    // browserSyncInit,
 );
 
 export const build = gulp.series(
