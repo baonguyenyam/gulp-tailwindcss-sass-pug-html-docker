@@ -1,0 +1,37 @@
+header#header(role='banner')
+	// NAVIGATION
+	// Header Topbar
+	nav#header_topbar.bg-main.text-white(role='nav')
+		.header_topbar_wrapper
+			ul
+				li
+					a(href='/careers') Careers
+				li
+					a(href='#')
+						img(src='/images/global/secure.svg' alt='Lock Icon')
+						span Log In
+	// Header Mainbar
+	nav#header_mainbar.bg-white.text-main(role='nav')
+		.header_mainbar_wrapper
+			.header_mainbar_logo
+				a(href='/')
+					img(src='/images/global/logo.png' alt='Logo')
+			#menu-toggle
+				.open-menu
+					img(src='/images/global/bar.svg' alt='Menu Icon')
+				.close-menu
+					img(src='/images/global/close.svg' alt='Close Icon')
+			ul#nav
+				li
+					a(href='/about') About Us
+				li.dropdown
+					a(href='/services') Services
+					ul.dropdown-menu
+						li
+							a(href='/services/abc') ABC Services
+						li
+							a(href='/services/xyz') XYZ Services
+				li
+					a(href='/contact') Contact Us
+				li
+					a(href='/careers') Careers

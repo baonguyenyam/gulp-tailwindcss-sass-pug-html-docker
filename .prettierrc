@@ -1,0 +1,8 @@
+{
+	"bracketSpacing" : true,
+	"bracketSameLine": true,
+	"tabWidth": 4,
+	"useTabs": true,
+	"proseWrap": "never",
+	"printWidth": 500
+}

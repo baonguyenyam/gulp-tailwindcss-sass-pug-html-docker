@@ -1,0 +1,55 @@
+{
+  "editor.tabSize": 4,
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": true,
+  "editor.renderWhitespace": "all",
+  "editor.insertSpaces": false,
+  "editor.wordWrap": "on",
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.fixAll.eslint",
+    "source.fixAll.tslint",
+    "source.fixAll.stylelint",
+    "source.fixAll.jest",
+  ],
+  "search.exclude": {
+    "package-lock.json": true,
+    "yarn.lock": true,
+    "node_modules": true,
+    "coverage": true
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.scss": "tailwindcss",
+    "*.js": "javascriptreact",
+    "*.ts": "typescriptreact",
+    "*.html": "html",
+    "*.pug": "pug",
+    "*.sass": "tailwindcss",
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  "[json][jsonc][yaml]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript][typescript][typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[scss][css][sass]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+  },
+  "[pug]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+}

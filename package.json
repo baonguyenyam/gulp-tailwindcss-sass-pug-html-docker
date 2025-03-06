@@ -1,0 +1,53 @@
+{
+  "name": "gulp-tailwindcss-pug-docker",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Nguyen Pham",
+    "email": "baonguyenyam@gmail.com",
+    "url": "https://nguyenpham.pro"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "dependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "@tailwindcss/postcss": "^4.0.10",
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.3",
+    "cssnano": "^7.0.6",
+    "dotenv": "^16.4.7",
+    "gulp": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^5.0.0",
+    "gulp-format-html": "^3.0.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-inject": "^5.0.5",
+    "gulp-minify": "^3.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-prettier": "^6.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^6.0.1",
+    "gulp-sitemap": "^8.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "postcss": "^8.5.3",
+    "postcss-import": "^16.1.0",
+    "postcss-nested": "^7.0.2",
+    "run-sequence": "^2.2.1",
+    "sass": "^1.85.1",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^4.0.10"
+  },
+  "packageManager": "yarn@1.22.22"
+}

@@ -1,0 +1,14 @@
+include ./mixin
+doctype html
+html(lang='en')
+	head
+		include _top
+	body#app
+		//- Header
+		include ../_snippets/header
+		//- Main
+		main(role='main')
+			block content
+		//- Footer
+		include ../_snippets/footer
+		include _bot

@@ -1,0 +1,28 @@
+/* 
+==========================================================================
+Copyright by Nguyen App
+Version: 1.0.0
+Author: Nguyen App
+Based on the customize tools: GulpJS/SASS/Pug/NodeJS
+Website: https://nguyenpham.pro
+==========================================================================
+*/
+
+// Enable this line to use Tailwind CSS
+@use "./tailwind.css";
+
+/*
+1./ Base
+2./ Header
+3./ Footer
+==========================================================================
+*/
+@use "./core/base.scss";
+@use "./core/header.scss";
+@use "./core/footer.scss";
+/* 
+==========================================================================
+Merge @media screen
+Responsive for all devices
+==========================================================================
+*/

@@ -1,0 +1,10 @@
+mixin cta(img, overlay,title, text, objectArray)
+	section#hero.hero-md.row.text-white(data-bg=img data-overlay=overlay data-position="center center" data-size="cover" data-attachment="fixed")
+		.container
+			.flex.justify-center.text-center
+				.col
+					h2= title
+					.text-sm.mb-1!= text
+					.btn-group.flex.justify-center.text-center
+						each item in objectArray
+							a.btn.btn-main.hover-white(href=item[1])= item[0]

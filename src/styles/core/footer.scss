@@ -1,0 +1,155 @@
+@use "./variable.scss" as *;
+/* 
+==========================================================================
+Footer by Nguyen App
+==========================================================================
+*/
+
+#footer {
+	padding: 0 1.5rem;
+
+	@include media(md) {
+		padding: 0 2rem;
+	}
+
+	@include media(lg) {
+		padding: 0 2rem;
+	}
+
+	.footer_wrapper {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 3rem 0;
+
+		@include media(md) {
+			padding: 4rem 0;
+		}
+
+		@include media(lg) {
+			max-width: var(--breakpoint-xxl);
+			padding: 5rem 0;
+		}
+
+		.footer_logo {
+			margin-bottom: .75rem;
+		}
+
+		.footer_slogan {
+			margin-bottom: 1.5rem;
+			font-size: var(--text-xs);
+			line-height: 1.1;
+			margin-top: 1rem;
+		}
+
+		.footer_fdic {
+			margin-top: 1.5rem;
+
+			@include media(md) {
+				margin-top: 3rem;
+			}
+		}
+
+		.label {
+			margin-bottom: 1.5rem;
+		}
+
+		ul {
+			list-style-type: none;
+			display: flex;
+			flex-direction: column;
+
+			li {
+
+				&:not(:first-child) {
+					margin-top: 1rem;
+				}
+
+				a {
+					text-decoration: none;
+					color: #fff;
+					white-space: nowrap;
+
+					&:hover {
+						opacity: .68;
+					}
+				}
+			}
+		}
+
+		.footer_address {
+
+			>*:not(:first-child) {
+				margin-top: 1.5rem;
+			}
+		}
+
+		.footer_group {
+			&:not(:last-child) {
+				margin-bottom: 3rem;
+			}
+		}
+
+		@include media(md) {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-gap: 3rem;
+
+			.footer_group {
+				&:not(:last-child) {
+					margin-bottom: 0;
+				}
+			}
+
+			.footer_group_1 {
+				grid-column: span 6;
+			}
+
+			.footer_group_2 {
+				grid-column: span 2;
+			}
+
+			.footer_group_3 {
+				grid-column: span 4;
+			}
+		}
+
+	}
+
+	.footer_copyright {
+		padding: 1.5rem 0;
+		position: relative;
+
+		>*:not(:first-child) {
+			margin-top: .5rem;
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			position: relative;
+
+			&:hover {
+				color: var(--color-secondary);
+			}
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: -1.5rem;
+			top: 0;
+			width: calc(100% + 3rem);
+			height: 1px;
+			background-color: rgba(255, 255, 255, .1);
+
+			@include media(md) {
+				left: -2rem;
+				width: calc(100% + 4rem);
+			}
+		}
+
+		@include media(md) {
+			text-align: center;
+		}
+	}
+}
