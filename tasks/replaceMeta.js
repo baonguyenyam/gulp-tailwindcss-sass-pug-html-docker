@@ -12,7 +12,6 @@ function replaceMeta() {
 		.pipe(replace(/<!--\s*\{\{\s*meta\s*\}\}\s*-->\s*/g, function (match) {
 			const metaFile = this.file.path.replace('index.html', '') + '.meta';
 			if (fs.existsSync(metaFile)) {
-				console.log('Meta file found:', metaFile);
 				return fs.readFileSync(metaFile);
 			}
 			return match;
