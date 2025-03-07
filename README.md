@@ -1,6 +1,6 @@
-# Gulp Front
+# Gulp/TailwindCSS/SASS/Pug Boilerplate
 
-A boilerplate for frontend projects powered by Gulp, PUG/HTML5 bolierplate, Sass, TailwindCSS, PostCSS, BrowserSync, Babel and Docker.
+Accelerate your frontend workflow with this robust boilerplate. Equipped with Gulp, PUG/HTML5, Sass, TailwindCSS, PostCSS, BrowserSync, Babel, and Docker, it's specifically designed for rapid and precise HTML implementation from Figma and Adobe Photoshop designs.
 
 _A lean and powerful, gulp-based boilerplate for better front-end coding with [Gulp](http://gulpjs.com/), [Pug](https://pugjs.org/), [HTMP](https://developer.mozilla.org/en-US/docs/Web/HTML), [Babel](https://babeljs.io/), [TailwindCSS](https://tailwindcss.com/) and [Sass](https://sass-lang.com/)_
 
@@ -8,17 +8,17 @@ _A lean and powerful, gulp-based boilerplate for better front-end coding with [G
 
 ## Core features
 
-- Modern and fast build tool
-- A convenient @media mixins
-- Use smart and convenient Gulp Tasks
-- Integrate TailwindCSS and SASS
-- Support Babel
-- Integrate BrowserSync
-- Support Docker for building images
-- PUG/HTML support
-- Prettier
-- Mockup API
-- Favicon Includes
+-   **Lightning-fast build process**: Leveraging modern tools for optimal performance.
+-   **Advanced @media mixins**: Streamlining responsive design implementation.
+-   **Intelligent Gulp task automation**: Simplifying complex workflows.
+-   **Seamless TailwindCSS and Sass integration**: Providing powerful styling capabilities.
+-   **Robust Babel support**: Ensuring compatibility with modern JavaScript.
+-   **Effortless BrowserSync integration**: Enabling real-time development feedback.
+-   **Docker containerization support**: Facilitating consistent and portable builds.
+-   **Flexible PUG/HTML templating**: Enhancing code maintainability.
+-   **Automated code formatting with Prettier**: Maintaining consistent code style.
+-   **Integrated mockup API**: Accelerating prototyping and development.
+-   **Automated favicon generation**: Simplifying asset management.
 
 ## Quickstart
 
@@ -44,9 +44,9 @@ _A lean and powerful, gulp-based boilerplate for better front-end coding with [G
 
 ## Main tasks
 
-- `yarn dev` - launches watchers and server
-- `yarn build` - compile a project
-- Run `sh app.sh` and follow the instructions
+-   `yarn dev` - launches watchers and server
+-   `yarn build` - compile a project
+-   Run `sh app.sh` and follow the instructions
 
 ## Config
 
@@ -54,8 +54,8 @@ In `.env` file
 
 ## Plugins
 
-- Swiper
-- FancyBox
+-   Swiper
+-   FancyBox
 
 ## License
 
