@@ -2,4 +2,7 @@ block foot
 //- Scripts
 script(src='/js/fancybox.umd.js')
 script(src='/js/swiper-bundle.min.js')
-script(src='/js/main.js')
+- if (process.env.NODE_ENV === 'development')
+	script(src='/js/main.js')
+- else
+	script(src='/js/main.min.js')
