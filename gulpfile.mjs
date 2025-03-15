@@ -27,7 +27,17 @@ import createSitemap from './tasks/createSitemap.js';
 import htmlCompress from './tasks/htmlCompress.js';
 import replaceMeta from './tasks/replaceMeta.js';
 
-// Gulp tasks: basic, default, build
+
+export const inDev = (done) => {
+    process.env.NODE_ENV = 'development';
+    done();
+};
+
+export const inProd = (done) => {
+    process.env.NODE_ENV = 'production';
+    done();
+}
+
 export const basic = gulp.series(
     cleanDist,
     copyCSS,
@@ -41,6 +51,7 @@ export const basic = gulp.series(
 );
 
 export default gulp.series(
+    inDev,
     basic,
     babelCompile,
     sassCompile,
@@ -48,6 +59,7 @@ export default gulp.series(
 );
 
 export const build = gulp.series(
+    inProd,
     basic,
     babelCompilePro,
     sassCompileProduct,
