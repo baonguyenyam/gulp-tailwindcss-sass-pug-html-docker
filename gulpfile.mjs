@@ -38,6 +38,14 @@ function compileTemplates(done) {
     }
 }
 
+function compressHTML(done) {
+    if (template_config.COMPRESS_HTML === 'true') {
+        return htmlCompress();
+    } else {
+        return gulp.series(htmlCompress, formatHtmlSiteApp)(done);
+    }
+}
+
 export const inDev = (done) => {
     process.env.NODE_ENV = 'development';
     done();
@@ -74,8 +82,5 @@ export const build = gulp.series(
     compressJS,
     cleanCSS,
     createSitemap,
-    template_config.COMPRESS_HTML === 'true' ? gulp.series(htmlCompress) : (done) => {
-        gulp.series(htmlCompress, formatHtmlSiteApp)();
-        done();
-    },
+    compressHTML,
 );
