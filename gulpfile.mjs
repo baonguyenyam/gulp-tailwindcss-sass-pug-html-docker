@@ -14,6 +14,7 @@ import browserSyncInit from './tasks/browserSyncInit.js';
 import copyCSS from './tasks/copyCSS.js';
 import copyJS from './tasks/copyJS.js';
 import copyImages from './tasks/copyImages.js';
+import ejsCompile from './tasks/ejsCompile.js';
 import pugCompile from './tasks/pugCompile.js';
 import htmlCompile from './tasks/htmlCompile.js';
 import sassCompileProduct from './tasks/sassCompileProduct.js';
@@ -27,6 +28,15 @@ import createSitemap from './tasks/createSitemap.js';
 import htmlCompress from './tasks/htmlCompress.js';
 import replaceMeta from './tasks/replaceMeta.js';
 
+function compileTemplates(done) {
+    if (template_config.TEMPLATE_COMPILE === 'pug') {
+        return pugCompile();
+    } else if (template_config.TEMPLATE_COMPILE === 'ejs') {
+        return gulp.series(ejsCompile, htmlReplace, replaceMeta)(done);
+    } else {
+        return gulp.series(htmlCompile, htmlReplace, replaceMeta)(done);
+    }
+}
 
 export const inDev = (done) => {
     process.env.NODE_ENV = 'development';
@@ -44,10 +54,7 @@ export const basic = gulp.series(
     copyImages,
     copyJS,
     copyData,
-    template_config.TEMPLATE_COMPILE === 'pug' ? pugCompile : (done) => {
-        gulp.series([htmlCompile, htmlReplace], replaceMeta)();
-        done();
-    }
+    compileTemplates,
 );
 
 export default gulp.series(
